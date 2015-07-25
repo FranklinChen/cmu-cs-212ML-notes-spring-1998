@@ -1,0 +1,138 @@
+Notes for CS 212-ML
+
+
+* MLWorks
+/afs/andrew.cmu.edu/scs/cs/15-212-ML/bin/mlworks
+
+[Remember to use mlworks-basis; this is the case with the given
+symlink but if run out of elsewhere would not.]
+
+** Preferences
+Q: What preferences should I set for MLWorks?
+
+A: Followed sheet mostly.
+Tell to copy handouts/sample.mlworks_preferences to .mlworks_preferences
+
+
+* SML/NJ
+Q: Where can I get a free implementation of SML?
+
+A: SML/NJ.  See Web notes on how to get it.
+You should be able to access the one at CMU at
+/afs/andrew/scs/cs/15-212-ML/bin/sml
+
+
+* emacs
+Q: Which version of Emacs do I need?
+
+A: Either GNU Emacs 19 (or higher) or XEmacs 19 (or higher) can be
+used.
+
+
+Q: Where can I find setup information?
+
+A: /afs/andrew/scs/cs/15-212-ML/lib/emacs/sml/init.el
+
+[This is the old 3.2.  People might want to try 3.3 beta.  But don't
+mention this.]
+
+** Sample .emacs for MLWorks
+[Edwin has]
+
+Q: How do I let MLWorks know to communicate with emacs?
+
+A: Put (mlworks-server) in your .emacs, or run it when needed using
+M-x mlworks-server.  Then various operations within MLWorks will allow
+the associated file to be automatically loaded into your emacs
+session.
+
+
+* demo
+Relative path for "use"
+Current directory for run.
+Compile.
+
+file:/afs/andrew/scs/cs/15-212-ML/www/mlworks-intro.html
+
+** code/lecture01.sml
+Have everyone "use" this file, read it, and look at the listener.
+
+** Make sure everyone has a handin directory
+
+[XUSERFILESEARCHPATH for Motif]
+
+
+* Examples
+Q: Where can I find example SML code?
+
+A: A whole bunch of example code is provided in the MLWorks
+distribution.  Look at
+
+/afs/andrew/scs/cs/mlworks/solaris/examples/
+
+
+
+
+* Documentation
+Q: Where can I find detailed documentation for MLWorks?
+
+A: /afs/andrew/scs/cs/15-212-ML/www/mlworks/ contains documentation
+for MLWorks 1.0, both in HTML and PostScript form.
+
+http://www.harlequin.com/support/mlworks/faq/faq0.htm has many helpful
+hints.
+
+
+
+* Debugging
+Q: How do I debug?
+
+A: First, it should be mentioned that it is best not to rely on the
+debugging facilities of MLWorks; instead, you should try to reason
+about the program while developing it.  That said, MLWorks does have
+some nice debugging facilities.  Under Preferences/Mode, uncheck
+Optimizing and check Debugging.
+
+--Stack browser
+[doesn't work for me on Linux]
+
+
+* Compilation
+[Probably do not need to know about until large programs.]
+
+Q: Is MLWorks an interpreter?
+
+A: From User Guide:
+
+	Note: The MLWorks system compiles all code, never interpreting
+	as some other languages, such as Lisp, do. The listener, with
+	its Lisp-like read-eval-print operation model, may seem like
+	an interpreter, but in fact everything it accepts is evaluated
+	by being compiled down to native code.
+Q: How do I organize the code in a project?
+
+A: If your program is in a single, small source file, it can be
+convenient to perform "use" on the source file, which amounts to
+reading it in and compiling its code.  However (see Harlequin's FAQ),
+the compilation manager is a better way to organize large or many
+files.
+
+
+* Other ML resources
+** Textbook supplements
+http://www.cl.cam.ac.uk/users/lcp/MLbook/
+for book
+
+http://www.cl.cam.ac.uk/users/lcp/MLbook/first/
+for syntax charts
+
+** Online
+http://www.harlequin.com/support/mlworks/bkshelf/bkshelf.htm
+Just a small sample of ML-related links out there (I can extract more
+from my bookmarks if you want).
+
+
+* Course directory [private info]
+admin/scripts has stuff for setting up the directories.
+studentdir/*  are the student dirs
+tadir/studentdir/* are handed-in assignments
